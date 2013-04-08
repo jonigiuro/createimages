@@ -1,0 +1,1 @@
+## Client side image placeholder generation (through canvas, with online-service fallback)
