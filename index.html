@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="container">
+            <h1 class="title">Createimages.js</h1>
+            <p class="text">
+                A jQuery plugin that creates image placeholders to semplify front end developing. You can choose an online service fallback.<br />
+                It's objective is to be as less invasive as possible. With it you can create the placeholders without adding any class or altering your html in any way.
+                All you have to do is include the script and set the source of the images to your favourit Placeholding webservice (it defaults to http://lorempixel.com).<br /><br />
+
+                example:<br />
+                img src="http://lorempixel/400/400/animals" alt="placeholder" <br />
+                Renders a 400x400 image with an animal on it.<br />
+                If no category is specified it will render a gray image.
+            </p>
+
+            <h2 class="subtitle">
+                Examples
+            </h2>
+
+            <div class="examples">
+                <div class="row">
+                    <div class="full">
+                        <img src="http://lorempixel.com/960/400/animals" alt="placeholder image" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="half column">
+                        <img src="http://lorempixel.com/480/200" alt="placeholder image" />
+                    </div>
+
+                    <div class="half column">
+                        <img src="http://lorempixel.com/480/200" alt="placeholder image" />
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="one-third column">
+                        <img src="http://lorempixel.com/320/300" alt="placeholder image" />
+                    </div>
+
+                    <div class="two-thirds column">
+                        <img src="http://lorempixel.com/640/300" alt="placeholder image" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="one-eight column">
+                        <img src="http://lorempixel.com/120/90/animals" alt="placeholder image" />
+                    </div>
+
+                    <div class="one-eight column">
+                        <img src="http://lorempixel.com/120/90/animals" alt="placeholder image" />
+                    </div>
+
+                    <div class="one-eight column">
+                        <img src="http://lorempixel.com/120/90/animals" alt="placeholder image" />
+                    </div>
+
+                    <div class="one-eight column">
+                        <img src="http://lorempixel.com/120/90/animals" alt="placeholder image" />
+                    </div>
+                    <div class="one-eight column">
+                        <img src="http://lorempixel.com/120/90/animals" alt="placeholder image" />
+                    </div>
+
+                    <div class="one-eight column">
+                        <img src="http://lorempixel.com/120/90/animals" alt="placeholder image" />
+                    </div>
+
+                    <div class="one-eight column">
+                        <img src="http://lorempixel.com/120/90/animals" alt="placeholder image" />
+                    </div>
+
+                    <div class="one-eight column">
+                        <img src="http://lorempixel.com/120/90/animals" alt="placeholder image" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <script src="js/createimages.js"></script>
+        <script>
+            CreateImages.init({
+                service: 'http://lorempixel.com',
+                sourceFolder: 'img/placeholdersss/'
+
+            });
+        </script>
+    </body>
+</html>
