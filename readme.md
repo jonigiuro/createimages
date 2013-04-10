@@ -14,3 +14,10 @@ This will render an image 200 pixels tall, 200 pixels wide and with an animal on
 
 I suggest you add big images named after a category in 'img/placeholders/' because the script will be using those to render the images.
 I use http://lorempixel.com as a fallback but you could use any online tool you want, just remember to change it in the script
+
+#### Example:
+    CreateImages.init({
+        service: 'http://lorempixel.com',
+        sourceFolder: 'img/placeholdersss/'
+
+    });
