@@ -19,5 +19,4 @@ I use http://lorempixel.com as a fallback but you could use any online tool you 
     CreateImages.init({
         service: 'http://lorempixel.com',
         sourceFolder: 'img/placeholdersss/'
-
     });
