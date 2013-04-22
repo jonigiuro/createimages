@@ -104,7 +104,7 @@ var CreateImages = {
 			context.shadowOffsetY = 0;
 			context.shadowBlur = 2;
 
-			var fontSize = width / 10;
+			var fontSize = width/10;
 			context.font = "normal " + (fontSize  + 3) + "px Helvetica";
 			context.fillText(width + " x " + height, 7, height - 7);
 
